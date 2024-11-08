@@ -1,0 +1,105 @@
+/* Reset some default styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: cyan; */
+  background-image: url('./assets/bf597a1ffdb1e965196f4d8ff638f3ca.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #333;
+}
+
+
+/* Slot Machine Game Styles */
+.App {
+  height: 670px;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background: #ffffff;
+  /* background: rgba(213, 137, 66, 0.978); */
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.reels {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.reel {
+  flex: 1;
+  background: #eee;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.reel h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.reel p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  /* background-color: #333; */
+  background-color: rgb(204, 66, 66);
+  box-shadow: 0 0 10px rgb(57, 57, 60);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button {
+  background-color: rgb(200, 13, 13);
+}
+button:hover:not(:disabled) {
+  background-color: rgb(200, 13, 13);
+  /* background-color: #555; */
+}
+
+button:disabled {
+  cursor: not-allowed;
+  /* background-color: #aaa; */
+  background-color: rgb(188, 68, 68);
+}
+
+.result {
+  margin-top: 20px;
+  box-shadow: 0 0 10px blue;
+}
+
+.result h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
